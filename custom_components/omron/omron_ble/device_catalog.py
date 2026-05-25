@@ -642,9 +642,8 @@ CANONICAL_DEVICE_PROFILES: dict[str, DeviceConfig] = {
         time_sync_layout="eeprom_time_modern_offset8",
         index_pointer_layout={
             "index_region_byte_size": 0x10,
-            "endianness": "big",
+            "endianness": "little",
             "backtrack_slots": 13,
-            "collect_all_valid_in_index_window": True,
             "skip_full_scan_fallback_when_index_empty": True,
             "users": [
                 {"write_cursor_offset": 0x00, "unread_counter_offset": 0x04, "write_cursor_mask": 0xFF, "slot_index_min": 0, "slot_index_max": 13, "slot_index_bias": -1},
